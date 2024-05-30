@@ -32,10 +32,15 @@
 }
 
 .sec2{
-    margin-top: 100px;
-    height: 400px;
+    height: 500px;
     width: 100%;
     /* background-color: aliceblue; */
+}
+.sec2 h2{
+    padding: 0;
+}
+.sec2 .p{
+    padding: 0 0 0 20px;
 }
 .sec-2{
     position: relative;
@@ -148,6 +153,10 @@
 
 
 
+#popup-message p {
+    margin-top: 20px;
+   text-align: left;
+}
 
 /* CSS สำหรับป๊อปอัพ */
 .popup {
@@ -169,6 +178,9 @@
     border-radius: 10px;
     text-align: center;
     position: relative;
+    width: 90%;
+    height: 300px;
+   
 }
 
 .close-btn {

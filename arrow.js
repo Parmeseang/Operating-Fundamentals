@@ -1,5 +1,5 @@
 let data = { value: 0 };
-
+        let o1 = {}
         // ฟังก์ชันสำหรับอัปเดตค่าที่แสดงใน HTML
         function updateDisplay() {
             document.getElementById('value').innerText = data.value;
