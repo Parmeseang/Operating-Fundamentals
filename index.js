@@ -26,6 +26,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.closePopup = function() {
         popup.style.display = 'none';
+        popup.classList.add("popup-nav");
+        popup.addEventListener('animationend', function() {
+            popup.classList.remove('popup-nav');
+      }, { once: true });
+        
     };
 
     window.addEventListener('click', function(event) {
@@ -34,3 +39,5 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
