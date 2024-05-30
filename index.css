@@ -5,12 +5,14 @@
     box-sizing: border-box;
     font-family: 'Anuphan', sans-serif;
 }
-
+body{
+    background: linear-gradient(to bottom ,#75cfff8a,#cd44ff52,#ff80f749);
+}
 .conteaner{
     margin: 0 auto;
-    width: 100%;
+    width: 950px;
     height: 150vh;
-    background: linear-gradient(to bottom ,#75cfff8a,#cd44ff52,#ff80f749);
+    
     /* background-color:#83d4ff48 ; */
      
 }
