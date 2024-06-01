@@ -295,3 +295,102 @@ nav .btn-bar{
         transform: scale(1)  ;
     }
 }
+
+
+@media only screen and (max-width: 400px) {
+    .conteaner{
+        width: 400px;
+    }
+    nav {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .nav img {
+        height: 60px;
+        width: 70px;
+    }
+    nav .btn-bar {
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .sec1 h1 {
+        color: rgb(217, 206, 255);
+        font-size: 20px;
+        position: relative;
+        left: 20px;
+        bottom: 20px;
+        padding: 10px;
+    }
+    .sec1 p {
+        font-size: 12px;
+        position: relative;
+        bottom: 20px;
+        padding: 10px;
+    }
+    .sec2 {
+        position: relative;
+        top: 80px;
+        height: 450px;
+        width: 400px;
+        /* background-color: aliceblue; */
+    }
+    .sec-2 {
+        margin: 0 auto;
+        width: 350px;
+        border-radius: 13px;
+        box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+        background-color: rgba(255, 255, 255, 0.39);
+        backdrop-filter: blur(20px);
+       
+    }
+    .sec2 img {
+        position: absolute;
+        height:100px;
+        width: 100px;
+        right: 10px;
+        top: 10px;
+    }
+    .sec2 p {
+        width: 300px;
+        padding: 10px;
+    }
+    .sec2 h2 {
+        padding: 20px 10px 5px 30px;
+    }
+    .next {
+        width: 250px;
+        margin: 50px auto 0 auto;
+        display: flex;
+        
+    }
+    .arrow {
+        z-index: 1;
+        display: flex;
+        margin: 0 auto;
+        height: 70px;
+        width: 300px;
+    }
+    .sec3 {
+        margin: 100px auto;
+        position: relative;
+        width: 380px;
+        height: 70px;
+        display: flex;
+    }
+    .box1 h1, .box3 h1, .box5 h1, .box7 h1 {
+        font-size: 32px;
+    }
+    .box2 h1, .box4 h1, .box6 h1 {
+        font-size: 32px;
+    }
+    #popup-message h1 {
+        font-size: 30px;
+    }
+    #popup-message p {
+        font-size: 12px;
+    }
+}
