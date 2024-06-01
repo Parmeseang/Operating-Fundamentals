@@ -15,10 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.showPopup = function(id) {
         var item = data[id];
         if (item) {
-            popupMessage.innerHTML = `
-                <h1> ${item.name}</h1>
-                <p> ${item.university}</p>
-            `;
+            popupMessage.innerHTML = `<h1>${item.name}</h1><p>${item.university}</p>`;
             popup.style.display = 'flex';
         }
     };
@@ -28,15 +25,10 @@ document.addEventListener("DOMContentLoaded", function() {
         popup.classList.add("popup-nav");
         popup.addEventListener('animationend', function() {
             popup.classList.remove('popup-nav');
-      }, { once: true });
-        
-    };
+        }, { once: true });};
 
     window.addEventListener('click', function(event) {
         if (event.target == popup) {
             closePopup();
         }
-    });
-});
-
-
+    });});
