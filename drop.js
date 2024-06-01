@@ -3,7 +3,7 @@ toggleDropdown=()=>{
     dp.classList.toggle("chang");
     dp.classList.add("popup-nav");
     dp.addEventListener('animationend', function() {
-        target.classList.remove('popup-nav');
+      dp.classList.remove('popup-nav');
       }, { once: true });
 }
 
