@@ -6,7 +6,7 @@
     font-family: 'Anuphan', sans-serif;
 }
 body{
-    /* background: linear-gradient(to bottom ,#75cfff8a,#cd44ff52,#ff80f749); */
+    background-color: #dbd8e3;
 }
 .conteaner{
     margin: 0 auto;
@@ -49,15 +49,14 @@ nav{
     padding: 0 40px;
 }
 nav .btn-bar{
+    cursor: pointer;
     font-size: 30px;
 }
     .nav img{
     height:100px;
     width: 120px;
 }
-.nav{
-    
-}
+
 .bg{
     position: absolute;
     width: 100%;
@@ -75,7 +74,7 @@ nav .btn-bar{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* สีดำโปร่งแสง */
+    background: #2010299f; /* สีดำโปร่งแสง */
     pointer-events: none; /* ทำให้ไม่สามารถคลิกผ่าน pseudo-element นี้ได้ */
 }
 
@@ -110,7 +109,7 @@ nav .btn-bar{
 .sec2{
     position: relative;
     top: 80px;
-    height: 500px;
+    height: 450px;
     width: 100%;
     /* background-color: aliceblue; */
 }
@@ -161,23 +160,27 @@ nav .btn-bar{
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 .arrow{
+    z-index: 1;
     display: flex;
     margin: 0 auto;
     height: 70px;
-    width: 250px;
+    width: 300px;
     /* backdrop-filter: blur(20px);
     background-color: rgba(255, 255, 255, 0.404);
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .arrow-left{
+    z-index: 1;
     width: 50%;
+    color: #352f44;
     /* backdrop-filter: blur(20px);
     background-color: rgba(255, 255, 255, 0.404);
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .arrow-rigth{
+    z-index: 1;
     width: 50%;
     /* backdrop-filter: blur(20px);
     background-color: rgba(255, 255, 255, 0.404);
@@ -199,7 +202,7 @@ nav .btn-bar{
             width: 100%;
             height: 100%;
             backdrop-filter: blur(20px);
-              background-color: rgb(157, 164, 255);
+              background-color: #5c5470;
             clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
             display: flex;
             align-items: center;
@@ -207,6 +210,7 @@ nav .btn-bar{
             color: rgb(255, 255, 255);
             font-size: 25px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
 }
 .box2 h1,.box4 h1,.box6 h1 {
     position: relative;
@@ -252,6 +256,7 @@ nav .btn-bar{
     justify-content: center;
     align-items: center;
     display: none; /* ซ่อนไว้ก่อน */
+    z-index: +2;
 }
 
 .popup-content {
@@ -262,7 +267,7 @@ nav .btn-bar{
     position: relative;
     width: 90%;
     height: 300px;
-   
+    z-index: +2;
 }
 
 .close-btn {
@@ -271,6 +276,7 @@ nav .btn-bar{
     right: 10px;
     font-size: 20px;
     cursor: pointer;
+    z-index: +2;
 }
 .popup-nav {
     animation: popup .2s ease;
