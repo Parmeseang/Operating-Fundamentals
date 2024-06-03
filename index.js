@@ -26,12 +26,12 @@ document.addEventListener("DOMContentLoaded", function() {
         popup.addEventListener('animationend', function() {
             popup.classList.remove('popup-nav');
         }, { once: true });};
-
+        closeBtn.addEventListener('click', function() {
+            closePopup();
+        });
     window.addEventListener('click', function(event) {
         if (event.target == popup) {
             closePopup();
         }
-        closeBtn.addEventListener('click', function() {
-            closePopup();
-        });
+        
     });});
