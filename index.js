@@ -31,4 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (event.target == popup) {
             closePopup();
         }
+        closeBtn.addEventListener('click', function() {
+            closePopup();
+        });
     });});
