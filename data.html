@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operating Fundamentals</title>
     <link rel="stylesheet" href="index.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -36,10 +37,9 @@
         
         
         <div class="sec2">
-           <div class="sec-2">
-            <h2>หัวข้อ</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolores dicta blanditiis exercitationem aspernatur quos dolor! Accusamus nobis ullam vitae rem, rerum reiciendis, expedita obcaecati atque ab consequatur molestias, alias debitis vero? Obcaecati dicta cum provident facilis laudantium natus illum, officia laborum error dolor temporibus laboriosam veritatis id, alias nemo.</p>
-            <img src="loogo.png" alt="">
+           <div class="sec-2 object-container" id="object-container" >
+            <h2 id="hp">หัวข้อ</h2>
+            <p id="pp"></p>
         </div>
         </div>
         <div class="next">
@@ -49,14 +49,15 @@
             <div class="o4"></div>
             <div class="o5"></div>
             <div class="o6"></div>
+            <div class="o7"></div>
         </div>
         <div class="arrow">
             <div class="arrow-left">
-                <svg fill="#3E065F" height="70px" width="125px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" stroke="#f7eded" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_27_" d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255 s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0 c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z"></path> </g></svg>
+                <i class='fas fa-chevron-left' style='font-size:36px'></i>
             </div>
             <div class="arrow-rigth">
-                <svg fill="#3E065F" height="70px" width="125px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve" stroke="#f7eded"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_27_" d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255 s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0 c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z"></path> </g></svg>
-        </div>
+                <i class='fas fa-chevron-right' style='font-size:36px'></i>
+                </div>
         </div>
         <h1>Current Value: <span id="value">0</span></h1>
 
@@ -80,7 +81,7 @@
         </div>
     </div>
        
-</body>
+</body>  
     <script src="index.js"></script>
     <script src="arrow.js"></script>
     <script src="drop.js"></script>
