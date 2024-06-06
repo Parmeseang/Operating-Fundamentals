@@ -119,12 +119,8 @@ nav .btn-bar{
 .sec2 .p{
     padding: 0 0 0 20px;
 }
-.next div {
-    background-color: lightgray; /* สีเริ่มต้นของ div */
-}
-.highlighted {
-    background-color: gray; /* สีเมื่อถูกเลือก */
-}
+
+
 .sec-2{
     position: relative;
     margin: auto;
@@ -156,16 +152,19 @@ nav .btn-bar{
     display: flex;
     margin: 0 auto;
 }
-
+.highlighted {
+    box-shadow: 0 0 18px 6PX rgb(255, 255, 255);
+}
 .next div {
     margin: 6px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     backdrop-filter: blur(20px);
-    background-color: rgba(255, 255, 255, 0.404);
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2); */
 }
+
 .arrow{
     z-index: 1;
     display: flex;

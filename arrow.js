@@ -31,7 +31,11 @@
             // อัปเดตสีของ divs ใน .next
             const nextDivs = document.querySelectorAll('.next div');
             nextDivs.forEach((div, index) => {
-                div.classList.toggle('highlighted', index + 1 === data.value);
+                if (index + 1 === data.value) {
+                    div.classList.add('highlighted');
+                } else {
+                    div.classList.remove('highlighted');
+                }
             });
         
 }
