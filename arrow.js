@@ -15,6 +15,7 @@
   // ฟังก์ชันสำหรับอัปเดตค่าที่แสดงใน HTML
   function updateDisplay() {
     document.getElementById('value').innerText = data.value;
+    
 
     const ppDiv = document.getElementById('pp');
     const hpDiv = document.getElementById('hp');
@@ -23,7 +24,7 @@
             // ตรวจสอบว่าค่า value อยู่ในช่วงที่เหมาะสม
             if (data.value >= 1 && data.value <= 7) {
                 const obj = objects[data.value - 1]; // ค้นหาวัตถุตามค่า value
-                ppDiv.innerText = `${obj.pp} ${data.value}`;
+                ppDiv.innerText = `${obj.pp}`;
                 hpDiv.innerText = `${obj.name}`
             }
 
