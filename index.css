@@ -153,7 +153,7 @@ nav .btn-bar{
     margin: 0 auto;
 }
 .highlighted {
-    box-shadow: 0 0 18px 6PX rgb(255, 255, 255);
+    box-shadow: 0 0 15px 15px rgb(255, 255, 255);
 }
 .next div {
     margin: 6px;
@@ -161,7 +161,7 @@ nav .btn-bar{
     height: 30px;
     border-radius: 50%;
     backdrop-filter: blur(20px);
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.692);
     /* box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2); */
 }
 
@@ -244,12 +244,15 @@ nav .btn-bar{
 
 #popup-message h1 {
     font-size: 40px;
- 
+    background-color: rgba(228, 182, 240, 0.596);
+    padding: 5px;
+    border-radius: 8px;
 }
 
 #popup-message p {
     font-size: 30px;
     margin-top: 20px;
+
    text-align: left;
 }
 
@@ -280,10 +283,18 @@ nav .btn-bar{
 }
 
 .close-btn {
+    color: white;
+    background-color: #5c5470;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    border-radius: 50%;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
+    top: -25px;
+    right: -20px;
+    font-size: 40px;
     cursor: pointer;
     z-index: +2;
 }
@@ -371,9 +382,11 @@ nav .btn-bar{
         padding: 20px 10px 5px 30px;
     }
     .next {
-        width: 250px;
+        width: 100%;
         margin: 50px auto 0 auto;
         display: flex;
+        align-items: center;
+        justify-content: center;
         
     }
     .arrow {
@@ -387,14 +400,24 @@ nav .btn-bar{
         margin: 100px auto;
         position: relative;
         width: 380px;
-        height: 70px;
+        height: 65px;
         display: flex;
     }
+    .next div {
+        margin: 6px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
     .box1 h1, .box3 h1, .box5 h1, .box7 h1 {
-        font-size: 32px;
+        font-size: 30px;
+        position: relative;
+        bottom: 10px;
     }
     .box2 h1, .box4 h1, .box6 h1 {
-        font-size: 32px;
+        font-size: 30px;
+        position: relative;
+        top: 10px;
     }
     #popup-message h1 {
         font-size: 30px;
