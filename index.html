@@ -9,9 +9,9 @@
       .conteaner{
             width: 100%;
             height:100vh;
-            background: url(image.png) no-repeat;
+            background: url(Artboard_1.png) no-repeat;
             background-position: center ;
-            background-size: 1920px auto;
+            background-size: auto 100dvh;
             object-fit: cover;
           }
           .conteaner::before {
@@ -25,6 +25,8 @@
             pointer-events: none; /* ทำให้ไม่สามารถคลิกผ่าน pseudo-element นี้ได้ */
         }
         .conteaner img{
+          width: 110px;
+          height: 85px;
           border-radius: 13px;
           box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.582);
           background-color: rgba(0, 0, 0, 0.349);
