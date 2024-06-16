@@ -3,7 +3,7 @@
 
   // วัตถุทั้ง 7 ก้อน
   let objects = [
-      { name: '6p',pp:'ใครที่คิดว่าตัวเองยังไม่ประสบความสำเร็จในหน้าที่การงานเท่าที่ควร หรือล้มเหลว ลองค้นหาจุดบกพร่องของตัวเองแล้วปรับปรุงให้ดีขึ้น พร้อมทั้งหาเทคนิควิธีการใหม่ๆ มาปรับใช้ในการทำงาน ซึ่งก็มีเทคนิคในการทำงานดีๆ ที่เรียกว่าคาทา 6P ดังนี้' },
+      { name: ' ',pp:'ใครที่คิดว่าตัวเองยังไม่ประสบความสำเร็จในหน้าที่การงานเท่าที่ควร หรือล้มเหลว ลองค้นหาจุดบกพร่องของตัวเองแล้วปรับปรุงให้ดีขึ้น พร้อมทั้งหาเทคนิควิธีการใหม่ๆ มาปรับใช้ในการทำงาน ซึ่งก็มีเทคนิคในการทำงานดีๆ ที่เรียกว่าคาทา 6P ดังนี้' },
       { name: 'P-Positive Thinking',pp:'การมีทัศนคติเชิงบวก หรือ การมองโลกในแง่ดี ตัวนี้จะเป็นพลังขับเคลื่อนที่สำคัญของเรา คงไม่ดีแน่ๆ ถ้าน้องๆ เจองานที่ยากๆ แล้วท้อแท้ตั้งแต่แรก' },
       { name: 'P-Peacepul Mind',pp:'คือ การมีจิตใจที่สงบ เยือกเย็น อยู่แบบไม่อิจฉาริษยาผู้อื่น “จงใช้ความสงบสยบความเคลื่อนไหว”' },
       { name: 'P-Patient',pp:'ความอดทน ข้อนี้จะสอดคล้องกับ P-Peacepul เพราะการที่เราจะมีจิตใจที่สงบได้นั้น เราต้องใช้ความอดทน และ อดกลั้น จำไว้ว่า ไม่มีใครมี่จะตรงใจเราทุกเรื่อง และในการทำงานเราจะเจอคนมากมาย เราไม่สามารถเปลี่ยนนิสัยของคนอื่นได้ แต่เราสามารถเปลี่ยนตัวเอง ในการรับมือกับคนพวกนี้ได้' },
@@ -14,18 +14,24 @@
 
   // ฟังก์ชันสำหรับอัปเดตค่าที่แสดงใน HTML
   function updateDisplay() {
-    document.getElementById('value').innerText = data.value;
-    
-
     const ppDiv = document.getElementById('pp');
-    const hpDiv = document.getElementById('hp');
+            const hpDiv = document.getElementById('hp');
+            const mainImage = document.getElementById('mainImage');
             ppDiv.innerHTML = ''; // ลบข้อมูลเก่าก่อนอัปเดตใหม่
+            hpDiv.innerHTML = '';
 
             // ตรวจสอบว่าค่า value อยู่ในช่วงที่เหมาะสม
             if (data.value >= 1 && data.value <= 7) {
                 const obj = objects[data.value - 1]; // ค้นหาวัตถุตามค่า value
                 ppDiv.innerText = `${obj.pp}`;
-                hpDiv.innerText = `${obj.name}`
+                hpDiv.innerText = `${obj.name}`;
+
+                // ขยับภาพขึ้นเมื่อ value ไม่เท่ากับ 1
+                if (data.value !== 1) {
+                    mainImage.style.transform = 'translateY(-45px)';
+                } else {
+                    mainImage.style.transform = 'translateY(0)';
+                }
             }
 
             // อัปเดตสีของ divs ใน .next
@@ -37,6 +43,7 @@
                     div.classList.remove('highlighted');
                 }
             });
+
         
 }
 
