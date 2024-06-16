@@ -110,7 +110,7 @@ nav .btn-bar{
 .sec2{
     position: relative;
     top:50px;
-    margin-top: 200px;
+    margin: 200px auto 0 auto;
     height: 450px;
     width: 100%;
     /* background-color: aliceblue; */
@@ -126,7 +126,7 @@ nav .btn-bar{
 .sec-2{
     z-index: -2;
     position: relative;
-    width: 900px;
+    width: 950px;
     height: 300px;
     border-radius: 13px;
     box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
@@ -401,7 +401,7 @@ nav .btn-bar{
         height: 100px;
     }
     .conteaner{
-        width: 400px;
+        width: 100%;
     }
     nav {
         background-color: rgb(255, 255, 255);
@@ -438,11 +438,14 @@ nav .btn-bar{
         top: 80px;
         height: 450px;
         width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         /* background-color: aliceblue; */
     }
     .sec-2 {
-        margin: 0 auto;
-        width: 350px;
+        margin: 0;
+        width: 100%;
         border-radius: 13px;
         box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
         background-color: rgba(255, 255, 255, 0.39);
@@ -451,7 +454,7 @@ nav .btn-bar{
     }
     
     .sec2 p {
-        width: 300px;
+        width: 90%;
         padding: 10px;
     }
     .sec2 h2 {
@@ -501,8 +504,16 @@ nav .btn-bar{
         font-size: 12px;
     }
 }
-
 @media only screen and (max-width: 720px) {
+    
+    .sec2{
+        position: relative;
+        top:50px;
+        margin: 150px auto 0 auto;
+        height: 450px;
+        width: 100%;
+        /* background-color: aliceblue; */
+    }
     .conteaner .img{
         position: absolute;
         left: 20px;
