@@ -384,6 +384,22 @@ nav .btn-bar{
 
 
 @media only screen and (max-width: 720px) {
+    #pp {
+        position: relative;
+        top: 30px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        z-index: +2;
+    }
+    .sec-2 img{
+        position: absolute;
+        left: -5px;
+        top:-40px;
+    }
+    #mainImage{
+        width: 200px;
+        height: 100px;
+    }
     .conteaner{
         width: 400px;
     }
@@ -433,13 +449,7 @@ nav .btn-bar{
         backdrop-filter: blur(20px);
        
     }
-    .sec2 img {
-        position: absolute;
-        height:100px;
-        width: 100px;
-        right: 10px;
-        top: 10px;
-    }
+    
     .sec2 p {
         width: 300px;
         padding: 10px;
@@ -453,7 +463,6 @@ nav .btn-bar{
         display: flex;
         align-items: center;
         justify-content: center;
-        
     }
     .arrow {
         z-index: 1;
